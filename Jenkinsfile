@@ -21,7 +21,7 @@ pipeline {
         stage('Push') {
             steps {
                 echo 'Push'
-                sh "npm run deploy"
+                sh "aws s3 sync dist/ s3://angular-application-demo"
             }
         }
     }
