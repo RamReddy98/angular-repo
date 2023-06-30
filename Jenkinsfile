@@ -12,12 +12,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Test'
-            }
-        }
-
         stage('Push') {
             steps {
                 echo 'Push'
